@@ -14,7 +14,7 @@ export function LangSwitch() {
       className="flex items-center gap-1.5 text-zinc-500 hover:text-zinc-200 transition-colors duration-300"
     >
       <IoLanguage className="w-4 h-4" />
-      <span className="text-[10px] font-mono tracking-wider uppercase">{next}</span>
+      <span className="text-[10px] font-mono tracking-wider uppercase">{lang}</span>
     </button>
   );
 }
