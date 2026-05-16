@@ -39,7 +39,7 @@ function CountUp({ target, label }: { target: number; label: string }) {
   return (
     <div className="text-center">
       <span className="text-4xl sm:text-5xl md:text-7xl font-black text-zinc-100 tabular-nums">{value}</span>
-      <span className="text-zinc-500 text-xs sm:text-sm font-mono block mt-2">{label}</span>
+      <span className="text-zinc-400 text-xs sm:text-sm font-mono block mt-2">{label}</span>
     </div>
   );
 }
@@ -99,7 +99,7 @@ export function ProfessionalPage() {
       <div className="mx-auto max-w-6xl">
 
         <m.section initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="mb-24">
-          <h2 className="text-[10px] font-mono text-zinc-600 uppercase tracking-[0.3em] mb-12 text-center">{t(lang, "professional.skillsHeading")}</h2>
+          <h2 className="text-[10px] font-mono text-zinc-400 uppercase tracking-[0.3em] mb-12 text-center">{t(lang, "professional.skillsHeading")}</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 sm:gap-16 max-w-3xl mx-auto">
             <div>
               <span className="text-[11px] font-mono text-zinc-400 uppercase tracking-[0.3em]">{t(lang, "professional.skillCategories.code")}</span>
@@ -131,7 +131,7 @@ export function ProfessionalPage() {
         <div className="w-full h-px bg-zinc-800/50 mb-24" />
 
         <m.section initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="mb-24">
-          <h2 className="text-[10px] font-mono text-zinc-600 uppercase tracking-[0.3em] mb-8 text-center">{t(lang, "professional.projectsHeading")}</h2>
+          <h2 className="text-[10px] font-mono text-zinc-400 uppercase tracking-[0.3em] mb-8 text-center">{t(lang, "professional.projectsHeading")}</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {projects.map((p, i) => (
               <div key={p.title} className="rounded-xl border border-zinc-800 bg-[var(--bg-surface)] hover:border-zinc-500/20 transition-colors duration-500 overflow-hidden">
@@ -145,13 +145,13 @@ export function ProfessionalPage() {
                 </div>
                 <div className="p-5">
                   <h3 className="text-lg font-semibold text-zinc-100 mb-2">{p.title}</h3>
-                  <p className="text-zinc-500 text-sm leading-relaxed mb-3">{descs[i]}</p>
+                  <p className="text-zinc-400 text-sm leading-relaxed mb-3">{descs[i]}</p>
                   {p.source && (
                     <a href={p.source} target="_blank" rel="noopener noreferrer" className="text-xs font-mono text-zinc-400 hover:text-zinc-300 transition-colors duration-300">
                       {t(lang, "professional.source")} ↗
                     </a>
                   )}
-                  {!p.live && <span className="text-xs font-mono text-zinc-600">{t(lang, "professional.comingSoon")}</span>}
+                  {!p.live && <span className="text-xs font-mono text-zinc-400">{t(lang, "professional.comingSoon")}</span>}
                 </div>
               </div>
             ))}
@@ -161,7 +161,7 @@ export function ProfessionalPage() {
         <div className="w-full h-px bg-zinc-800/50 mb-24" />
 
         <m.section initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="mb-24">
-          <h2 className="text-[10px] font-mono text-zinc-600 uppercase tracking-[0.3em] mb-12 text-center">{t(lang, "professional.timelineHeading")}</h2>
+          <h2 className="text-[10px] font-mono text-zinc-400 uppercase tracking-[0.3em] mb-12 text-center">{t(lang, "professional.timelineHeading")}</h2>
           <div className="relative">
             <div className="absolute left-[11px] top-2 bottom-2 w-px bg-zinc-800" />
             {timelinePeriods.map((item, i) => (
@@ -169,7 +169,7 @@ export function ProfessionalPage() {
                 <div className="absolute left-0 top-1.5 w-[23px] h-[23px] rounded-full border-4 border-[#08080a] bg-zinc-700 flex items-center justify-center">
                   <div className="w-1.5 h-1.5 rounded-full bg-zinc-400" />
                 </div>
-                <span className="text-[11px] font-mono text-zinc-500">{item.period}</span>
+                <span className="text-[11px] font-mono text-zinc-400">{item.period}</span>
                 <h3 className="text-zinc-100 font-semibold text-base mt-1">{item.title}</h3>
                 <p className="text-zinc-400 text-sm mt-1.5 leading-relaxed">{timeline[i]?.subtitle}</p>
                 {item.children && timeline[i]?.children && (
@@ -177,11 +177,11 @@ export function ProfessionalPage() {
                     {item.children.map((child, j) => (
                       <div key={j} className="relative">
                         <div className="absolute -left-[25px] top-1.5 w-2 h-2 rounded-full bg-zinc-600 border-2 border-[#08080a]" />
-                        <span className="text-[10px] font-mono text-zinc-600">{child.period}</span>
+                        <span className="text-[10px] font-mono text-zinc-400">{child.period}</span>
                         <h4 className="text-zinc-200 font-medium text-sm mt-0.5">{child.title}</h4>
-                        <p className="text-zinc-500 text-xs mt-0.5 leading-relaxed">{timeline[i].children![j]?.subtitle}</p>
+                        <p className="text-zinc-400 text-xs mt-0.5 leading-relaxed">{timeline[i].children![j]?.subtitle}</p>
                         {timeline[i].children![j]?.note && (
-                          <p className="text-zinc-600 text-[10px] mt-1 italic">{timeline[i].children![j].note}</p>
+                          <p className="text-zinc-400 text-[10px] mt-1 italic">{timeline[i].children![j].note}</p>
                         )}
                       </div>
                     ))}

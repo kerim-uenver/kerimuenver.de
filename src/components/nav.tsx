@@ -45,7 +45,7 @@ export function Nav() {
               href={href}
               aria-current={isActive(href) ? "page" as const : undefined}
               className={`transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-zinc-400 rounded ${
-                isActive(href) ? "text-zinc-100" : "text-zinc-500 hover:text-zinc-200"
+                isActive(href) ? "text-zinc-100" : "text-zinc-400 hover:text-zinc-200"
               }`}
             >
               {labels[i]}
@@ -56,8 +56,8 @@ export function Nav() {
         <div className="flex items-center gap-3">
           <div className="hidden sm:flex items-center gap-3">
             <a href="https://github.com/kerim-uenver" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
-              className="text-zinc-500 hover:text-zinc-200 transition-colors duration-300">
-              <FaGithub className="w-5 h-5 text-zinc-500 hover:text-zinc-200 transition-colors shrink-0" />
+              className="text-zinc-400 hover:text-zinc-200 transition-colors duration-300">
+              <FaGithub className="w-5 h-5 text-zinc-400 hover:text-zinc-200 transition-colors shrink-0" />
             </a>
             <span className="w-px h-4 bg-zinc-800 ml-1" />
           </div>
@@ -79,7 +79,7 @@ export function Nav() {
                 key={href} href={href} onClick={() => setOpen(false)}
                 aria-current={isActive(href) ? "page" as const : undefined}
                 className={`text-base transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-zinc-400 rounded ${
-                  isActive(href) ? "text-zinc-200" : "text-zinc-500"
+                  isActive(href) ? "text-zinc-200" : "text-zinc-400"
                 }`}
               >
                 {labels[i]}
@@ -87,8 +87,8 @@ export function Nav() {
             ))}
             <div className="flex gap-4 pt-2 border-t border-[var(--border)]">
               <a href="https://github.com/kerim-uenver" target="_blank" rel="noopener noreferrer"
-                className="text-zinc-500 hover:text-zinc-200 transition-colors duration-300">
-                <FaGithub className="w-5 h-5 text-zinc-500 hover:text-zinc-200 transition-colors shrink-0" />
+                className="text-zinc-400 hover:text-zinc-200 transition-colors duration-300">
+                <FaGithub className="w-5 h-5 text-zinc-400 hover:text-zinc-200 transition-colors shrink-0" />
               </a>
             </div>
           </div>

@@ -13,7 +13,7 @@ export default function PrivacyPage() {
         <h1 className="text-3xl font-bold tracking-tight text-zinc-100 mb-8">{t(lang, "privacy.heading")}</h1>
         <div className="space-y-6 text-sm text-zinc-400 leading-relaxed">
           <p>{t(lang, "privacy.intro")}</p>
-          <p className="text-zinc-600 text-xs">{t(lang, "privacy.cookie")}</p>
+          <p className="text-zinc-500 text-xs">{t(lang, "privacy.cookie")}</p>
           <section>
             <h2 className="text-base font-medium text-zinc-200 mb-2">{t(lang, "privacy.contactHeading")}</h2>
             <p className="font-medium">{NAME}</p>

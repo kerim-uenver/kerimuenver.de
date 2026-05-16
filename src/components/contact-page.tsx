@@ -41,7 +41,7 @@ export function ContactPage() {
     } catch { setStatus("error"); setErrMsg("Network error"); }
   }
 
-  const inputClass = "w-full px-4 py-3 rounded-lg bg-[var(--bg-surface)] border border-zinc-800 text-zinc-200 text-sm placeholder:text-zinc-600 focus:outline-none focus:border-zinc-500/50 transition-colors duration-300";
+  const inputClass = "w-full px-4 py-3 rounded-lg bg-[var(--bg-surface)] border border-zinc-800 text-zinc-200 text-sm placeholder:text-zinc-500 focus:outline-none focus:border-zinc-500/50 transition-colors duration-300";
 
   return (
     <div className="px-8 pt-32 pb-24">
@@ -49,7 +49,7 @@ export function ContactPage() {
 
         <m.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}
           className="text-center mb-16">
-          <span className="text-[10px] font-mono text-zinc-600 uppercase tracking-[0.3em]">{t(lang, "contact.heading")}</span>
+          <span className="text-[10px] font-mono text-zinc-500 uppercase tracking-[0.3em]">{t(lang, "contact.heading")}</span>
           <h1 className="text-4xl font-black tracking-tighter text-zinc-100 mt-2">
             {t(lang, "contact.title")}
           </h1>
@@ -74,11 +74,11 @@ export function ContactPage() {
 
         <m.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.3 }}
           className="text-center space-y-3 text-sm">
-          <p className="text-zinc-600">{t(lang, "contact.or")}</p>
+          <p className="text-zinc-500">{t(lang, "contact.or")}</p>
           <a href={mailHref()} className="block text-zinc-400 hover:text-zinc-300 transition-colors duration-300 text-base">
             {mail()}
           </a>
-          <p className="text-zinc-600">{tel()}</p>
+          <p className="text-zinc-500">{tel()}</p>
         </m.div>
 
       </div>

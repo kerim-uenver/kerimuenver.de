@@ -28,7 +28,7 @@ export function CookieBanner() {
             <p className="text-zinc-400 text-sm">{t(lang, "cookie.text")}</p>
             <div className="flex items-center gap-2 shrink-0">
               <button onClick={decline}
-                className="px-4 py-2 rounded-lg text-zinc-500 text-sm hover:text-zinc-300 hover:bg-zinc-800/50 transition-colors duration-200">
+                className="px-4 py-2 rounded-lg text-zinc-400 text-sm hover:text-zinc-300 hover:bg-zinc-800/50 transition-colors duration-200">
                 {t(lang, "cookie.decline")}
               </button>
               <button onClick={accept}
