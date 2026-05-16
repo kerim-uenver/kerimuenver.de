@@ -4,9 +4,7 @@ import { useLang } from "@/lib/lang-context";
 import { t, ta, to } from "@/lib/i18n";
 import { NAME, gridGradient } from "@/lib/constants";
 import { m, animate } from "motion/react";
-import Image from "next/image";
 import { useEffect, useState } from "react";
-import portrait from "@/../public/portrait.webp";
 
 function Typewriter({ text, onDone }: { text: string; onDone?: () => void }) {
   const [displayed, setDisplayed] = useState("");
@@ -85,7 +83,7 @@ export function ProfessionalPage() {
 
           <div className="relative shrink-0 self-center md:self-auto">
             <div className="absolute -inset-8 rounded-full bg-zinc-500/10 blur-3xl" />
-            <Image src={portrait} alt={NAME} width={400} height={400} priority
+            <img src="/portrait.webp" alt={NAME} width={400} height={400} fetchPriority="high"
               className="rounded-full w-56 h-56 md:w-72 md:h-72 lg:w-96 lg:h-96 object-cover object-[50%_15%] relative z-10 ring-1 ring-zinc-700" />
           </div>
         </div>

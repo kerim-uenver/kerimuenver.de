@@ -21,6 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="de" className={GeistMono.variable}>
       <head>
         <link rel="preconnect" href="https://api.web3forms.com" />
+        <link rel="preload" as="image" href="/portrait.webp" fetchPriority="high" />
       </head>
       <body className="min-h-screen flex flex-col overflow-x-hidden max-w-full">
         <LangProvider>
