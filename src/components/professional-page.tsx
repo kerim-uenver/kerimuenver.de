@@ -71,7 +71,7 @@ export function ProfessionalPage() {
       <section className="pt-24 pb-16 mb-8 relative">
         <div className="absolute inset-0 pointer-events-none" style={gridGradient} />
 
-        <div className="mx-auto max-w-6xl flex flex-col md:flex-row md:items-center items-center md:items-center gap-8 md:gap-16">
+        <div className="mx-auto max-w-6xl flex flex-col md:flex-row md:items-center gap-8 md:gap-16">
           <div className="flex-1 text-center md:text-left">
             <p className="text-4xl sm:text-6xl md:text-7xl lg:text-9xl font-light tracking-tighter text-zinc-100 mb-4 leading-[1.1]">
               <Typewriter text={t(lang, "hero.greeting")} onDone={() => setTimeout(() => setSecondReady(true), 400)} />
@@ -83,8 +83,9 @@ export function ProfessionalPage() {
 
           <div className="relative shrink-0 self-center md:self-auto">
             <div className="absolute -inset-8 rounded-full bg-zinc-500/10 blur-3xl" />
-            <img src="/portrait.webp" alt={NAME} width={400} height={400} fetchPriority="high"
-              className="rounded-full w-56 h-56 md:w-72 md:h-72 lg:w-96 lg:h-96 object-cover object-[50%_15%] relative z-10 ring-1 ring-zinc-700" />
+            <img src="/portrait.webp" alt={NAME}
+              className="rounded-full w-56 h-56 md:w-72 md:h-72 lg:w-96 lg:h-96 object-cover object-[50%_15%] relative z-10 ring-1 ring-zinc-700"
+              fetchPriority="high" />
           </div>
         </div>
 
