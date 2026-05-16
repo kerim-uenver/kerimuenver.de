@@ -19,6 +19,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="de" className={GeistMono.variable}>
+      <head>
+        <link rel="preconnect" href="https://api.web3forms.com" />
+      </head>
       <body className="min-h-screen flex flex-col overflow-x-hidden max-w-full">
         <LangProvider>
           <SkipLink />

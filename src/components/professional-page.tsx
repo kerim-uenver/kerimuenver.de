@@ -6,7 +6,7 @@ import { NAME, gridGradient } from "@/lib/constants";
 import { m, animate } from "motion/react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import portrait from "@/../public/portrait.png";
+import portrait from "@/../public/portrait.webp";
 
 function Typewriter({ text, onDone }: { text: string; onDone?: () => void }) {
   const [displayed, setDisplayed] = useState("");
@@ -47,8 +47,8 @@ function CountUp({ target, label }: { target: number; label: string }) {
 }
 
 const projects = [
-  { title: "kerimuenver.de", source: "https://github.com/kerim-uenver/kerimuenver.de", image: "/projects/kerimuenver.png", live: true },
-  { title: "tools.kerimuenver.de", source: undefined, image: "/projects/tools.png", live: false },
+  { title: "kerimuenver.de", source: "https://github.com/kerim-uenver/kerimuenver.de", image: "/projects/kerimuenver.webp", live: true },
+  { title: "tools.kerimuenver.de", source: undefined, image: "/projects/tools.webp", live: false },
 ];
 
 type TimelineChild = { subtitle: string; note: string };
